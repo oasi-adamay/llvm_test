@@ -1,3 +1,7 @@
+# LLVM
+*.ll
+*.bc
+
 # Object files
 *.o
 *.ko
