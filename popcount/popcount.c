@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-typedef unsigned int int32_t;
+typedef unsigned int UINT32;
 
-int popcount(int32_t bits)
+int popcount(UINT32 bits)
 {
 	bits = (bits & 0x55555555) + (bits >> 1 & 0x55555555);
 	bits = (bits & 0x33333333) + (bits >> 2 & 0x33333333);
@@ -12,7 +12,7 @@ int popcount(int32_t bits)
 }
 
 int main(void){
-	int32_t deadbeaf = 0xdeadbeaf;
+	UINT32 deadbeaf = 0xdeadbeaf;
 
 	printf("0x%x:popcount:%d\n",deadbeaf,popcount(deadbeaf));
 	return 0;
