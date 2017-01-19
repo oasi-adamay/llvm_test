@@ -1,6 +1,5 @@
 // commit from  VS-Code
 
-
 #include <stdio.h>
 int main(void){
     printf("hello world\n");
